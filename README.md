@@ -9,21 +9,32 @@ To write a program to find the LU Decomposition of a matrix.
 
 ## Algorithm
 1. 
+Import numoy package
 2. 
+From scipy package import lu
 3. 
+Get input from the user
 4. 
-
+Print result
 ## Program:
-```
-/*
-Program to find the LU Decomposition of a matrix.
-Developed by: 
-RegisterNumber: 
-*/
+```PYTHON
+'''Program to find L and U matrix using LU decomposition.
+Developed by: Gayathri A
+RegisterNumber: 21500440
+'''
+
+# To print L and U matrix
+import numpy as np
+import scipy
+from scipy.linalg import lu
+A=np.array(eval(input()))
+P,L,U=lu(A)
+print(L)
+print(U)
 ```
 
 ## Output:
-![lu decomposition]()
+![output](./IMAGE.png)
 
 
 ## Result:
